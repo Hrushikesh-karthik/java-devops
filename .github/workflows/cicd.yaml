@@ -87,7 +87,7 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git config --global user.name "github-actions"
 
-          git add helm/java-app-chart/values.yaml
+          git add helm/java-app/values.yaml
 
           git commit -m "Update image tag to ${{ github.run_id }}"
 
