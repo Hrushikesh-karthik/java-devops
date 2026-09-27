@@ -80,7 +80,7 @@ jobs:
 
       - name: Update Image Tag in Helm Chart
         run: |
-          sed -i 's/tag: .*/tag: "${{ github.run_id }}"/' helm/java-app-chart/values.yaml
+          sed -i 's/tag: .*/tag: "${{ github.run_id }}"/' helm/java-app/values.yaml
 
       - name: Commit and Push Changes
         run: |
