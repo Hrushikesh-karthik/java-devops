@@ -32,15 +32,13 @@ Open in browser:
 localhost:3000
 Scan target by running ZAP from cli
 
-docker run --rm \
-  -v "$(pwd):/zap/wrk" \
-  -t ghcr.io/zaproxy/zaproxy:stable \
-  zap-baseline.py \
-  -t http://host.docker.internal:3000 \
-  -r zap-report.html
+docker run --rm -v "$(pwd):/zap/wrk" -t ghcr.io/zaproxy/zaproxy:stable zap-baseline.py -t http://host.docker.internal:3000 -r zap-report.html
+
   
 Scan target by running ZAP from UI
+
 docker run -it -p 8080:8080 ghcr.io/zaproxy/zaproxy:stable zap-webswing.sh
+
 Open Zap UI:
 
 http://localhost:8080/zap
