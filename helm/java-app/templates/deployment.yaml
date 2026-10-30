@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: java-app
-        image: uhkarthik/java_app:{{ .Values.image.tag }}
+        image: uhkarthik/java-app:{{ .Values.image.tag }}
         ports:
         - containerPort: 8080
