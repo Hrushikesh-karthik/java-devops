@@ -9,7 +9,7 @@ public class HomeController {
     @GetMapping("/")
     public String home() {
         return """
-             Hello from Osmania DevOps.
+             Hello from Osmania DevOps with DevSecOps.
             """;
     }
 
